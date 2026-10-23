@@ -1,0 +1,29 @@
+body {
+  color: #0a0a0a;
+  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+/* Full color imagery - no forced grayscale */
+.color-grid-img, .bw-grid-img {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.6s ease;
+  filter: none;
+}
+.group:hover .color-grid-img, .group:hover .bw-grid-img {
+  transform: scale(1.05);
+  filter: contrast(105%) brightness(102%);
+}
+.glass-nav {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+}
+.hairline-b {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.hairline-t {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+.hairline-all {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
