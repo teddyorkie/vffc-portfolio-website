@@ -12,7 +12,7 @@
         <div class="flex items-center gap-4 text-neutral-400">
           <span id="topBarOffices">Hanoi &amp; Ho Chi Minh City</span>
           <span class="hidden sm:inline">•</span>
-          <a href="tel:+84959385538" class="text-white hover:underline">(+84) 959 38 55 38</a>
+          <a href="tel:+84949385538" class="text-white hover:underline">(+84) 949 38 55 38</a>
           <span class="hidden sm:inline">•</span>
           <a href="mailto:ceo@vffc.vn" class="text-white hover:underline">ceo@vffc.vn</a>
         </div>
