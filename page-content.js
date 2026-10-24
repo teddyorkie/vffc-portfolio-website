@@ -612,8 +612,8 @@ mount.insertAdjacentHTML('beforebegin', `  <main>
               </div>
 
               <div class="pt-2">
-                <a href="mailto:ceo@vffc.vn" id="leader1Contact" class="text-xs font-mono uppercase tracking-widest text-neutral-300 hover:text-white underline underline-offset-4">
-                  Direct Contact: ceo@vffc.vn &rarr;
+                <a href="mailto:trangbtt@vffc.vn" id="leader1Contact" class="text-xs font-mono uppercase tracking-widest text-neutral-300 hover:text-white underline underline-offset-4">
+                  Direct Contact: trangbtt@vffc.vn &rarr;
                 </a>
               </div>
             </div>
@@ -665,7 +665,7 @@ mount.insertAdjacentHTML('beforebegin', `  <main>
               <div class="flex items-start justify-between border-b border-neutral-800 pb-4">
                 <div>
                   <span id="leader3Role" class="text-[10px] font-mono uppercase tracking-widest text-neutral-400">Chief Technology Officer</span>
-                  <h3 class="text-2xl font-serif font-normal text-white mt-1">Mr. Quang Le</h3>
+                  <h3 class="text-2xl font-serif font-normal text-white mt-1">Quang Le, Bs</h3>
                 </div>
                 <span class="text-[10px] font-mono bg-white text-black px-2 py-1 font-bold">FLORIDA TECH</span>
               </div>
@@ -692,8 +692,8 @@ mount.insertAdjacentHTML('beforebegin', `  <main>
               </div>
 
               <div class="pt-2">
-                <a href="mailto:cto@vffc.vn" id="leader3Contact" class="text-xs font-mono uppercase tracking-widest text-neutral-300 hover:text-white underline underline-offset-4">
-                  Direct Contact: cto@vffc.vn &rarr;
+                <a href="mailto:quangld@vffc.vn" id="leader3Contact" class="text-xs font-mono uppercase tracking-widest text-neutral-300 hover:text-white underline underline-offset-4">
+                  Direct Contact: quangld@vffc.vn &rarr;
                 </a>
               </div>
             </div>
@@ -811,11 +811,11 @@ mount.insertAdjacentHTML('beforebegin', `  <main>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 <div class="space-y-1">
                   <span id="directPhoneLabel" class="text-[10px] font-mono uppercase tracking-widest text-neutral-400">Direct Telephone</span>
-                  <p><a href="tel:+84959385538" class="text-white hover:underline font-mono">(+84) 959 38 55 38</a></p>
+                  <p><a href="tel:+84949385538" class="text-white hover:underline font-mono">(+84) 949 38 55 38</a></p>
                 </div>
                 <div class="space-y-1">
                   <span id="directEmailLabel" class="text-[10px] font-mono uppercase tracking-widest text-neutral-400">Executive Desk</span>
-                  <p><a href="mailto:ceo@vffc.vn" class="text-white hover:underline font-mono">ceo@vffc.vn</a></p>
+                  <p><a href="mailto:trangbtt@vffc.vn" class="text-white hover:underline font-mono">trangbtt@vffc.vn</a></p>
                 </div>
               </div>
             </div>

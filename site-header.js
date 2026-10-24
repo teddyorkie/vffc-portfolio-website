@@ -14,7 +14,7 @@
           <span class="hidden sm:inline">•</span>
           <a href="tel:+84949385538" class="text-white hover:underline">(+84) 949 38 55 38</a>
           <span class="hidden sm:inline">•</span>
-          <a href="mailto:ceo@vffc.vn" class="text-white hover:underline">ceo@vffc.vn</a>
+          <a href="mailto:trangbtt@vffc.vn" class="text-white hover:underline">trangbtt@vffc.vn</a>
         </div>
       </div>
     </div>

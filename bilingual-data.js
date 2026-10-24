@@ -106,7 +106,7 @@
         leader1_role: "Chief Executive Officer",
         leader1_bio1: "<strong>Dr. Trang Bui</strong> brings over 15 years of senior executive experience spanning investment banking, corporate restructuring, real estate development, and retail expansion across France and Southeast Asia.",
         leader1_bio2: "Having completed doctoral studies at <strong>IGR-IAE Rennes University (France)</strong> and sharpened strategic acumen within global giants like <em>Carrefour SA</em>, Dr. Trang Bui directs VFFC’s financial engineering practice, commercial HMA negotiations with international hotel operators, and structured cross-border transactions.",
-        leader1_contact: "Direct Contact: ceo@vffc.vn &rarr;",
+        leader1_contact: "Direct Contact: trangbtt@vffc.vn &rarr;",
         
         leader2_role: "Chief Operating Officer",
         leader2_bio1: "<strong>Dr. Hai Hoang</strong> commands over 15 years of specialized expertise in technical design, tunnel and bridge structural engineering, advanced construction materials advisory, and turnkey execution.",
@@ -116,7 +116,7 @@
         leader3_role: "Chief Technology Officer",
         leader3_bio1: "<strong>Mr. Quang Le</strong> commands over 15 years of distinguished leadership in software development, digital transformation, and optimizing complex company processes across multinational engineering and enterprise environments.",
         leader3_bio2: "Graduating from the prestigious <strong>Florida Institute of Technology (USA)</strong>, Mr. Quang Le directs VFFC’s digital architecture—pioneering integrated project dashboards, automated BIM workflow pipelines, enterprise cloud infrastructure, and operational process optimization systems that eliminate bottlenecks and enhance decision intelligence.",
-        leader3_contact: "Direct Contact: cto@vffc.vn &rarr;",
+        leader3_contact: "Direct Contact: quangld@vffc.vn &rarr;",
         
         core_domains_label: "Core Domains:",
         
@@ -302,7 +302,7 @@
         leader1_role: "Tổng Giám Đốc (CEO)",
         leader1_bio1: "<strong>Tiến sĩ Bùi Trang</strong> sở hữu hơn 15 năm kinh nghiệm điều hành cấp cao trong lĩnh vực ngân hàng đầu tư, tái cấu trúc doanh nghiệp, phát triển bất động sản và mở rộng chuỗi bán lẻ tại Pháp và Đông Nam Á.",
         leader1_bio2: "Hoàn thành chương trình tiến sĩ tại <strong>Đại học IGR-IAE Rennes (Pháp)</strong> và rèn luyện tư duy chiến lược tại các tập đoàn đa quốc gia như <em>Carrefour SA</em>, TS. Bùi Trang trực tiếp chỉ đạo mảng kỹ thuật tài chính của VFFC, đàm phán hợp đồng quản lý khách sạn (HMA) quốc tế và cấu trúc các thương vụ xuyên biên giới.",
-        leader1_contact: "Liên Hệ Trực Tiếp: ceo@vffc.vn &rarr;",
+        leader1_contact: "Liên Hệ Trực Tiếp: trangbtt@vffc.vn &rarr;",
         
         leader2_role: "Giám Đốc Vận Hành (COO)",
         leader2_bio1: "<strong>Tiến sĩ Hoàng Hải</strong> sở hữu hơn 15 năm chuyên môn sâu rộng về thiết kế kỹ thuật, kết cấu hầm và cầu đường bộ, tư vấn vật liệu xây dựng tiên tiến và điều hành thi công trọn gói.",
@@ -312,7 +312,7 @@
         leader3_role: "Giám Đốc Công Nghệ (CTO)",
         leader3_bio1: "<strong>Chuyên gia Lê Quang</strong> có hơn 15 năm kinh nghiệm chuyên sâu trong phát triển phần mềm, chuyển đổi số và tối ưu hóa quy trình doanh nghiệp phức tạp tại các tổ chức công nghệ và kỹ thuật đa quốc gia.",
         leader3_bio2: "Tốt nghiệp <strong>Viện Công nghệ Florida (Florida Institute of Technology - Hoa Kỳ)</strong>, Mr. Quang Le trực tiếp chỉ đạo kiến trúc công nghệ số tại VFFC—tiên phong phát triển các bảng điều khiển phân tích dự án, tự động hóa quy trình BIM, hạ tầng điện toán đám mây và hệ thống tối ưu hóa vận hành, giúp triệt tiêu các nút thắt quy trình và nâng tầm năng lực quản trị.",
-        leader3_contact: "Liên Hệ Trực Tiếp: cto@vffc.vn &rarr;",
+        leader3_contact: "Liên Hệ Trực Tiếp: quangld@vffc.vn &rarr;",
         
         core_domains_label: "Lĩnh Vực Chuyên Sâu:",
         

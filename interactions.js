@@ -391,6 +391,38 @@
       applyLanguage(nextLang);
     }
 
+    // BUILD CONTACT FORM MAILTO URL
+    function buildContactMailtoUrl(data, refId) {
+      const fullName = (data.fullName || '').trim() || 'N/A';
+      const workEmail = (data.workEmail || '').trim() || 'N/A';
+      const phoneNumber = (data.phoneNumber || '').trim() || 'N/A';
+      const organization = (data.organization || '').trim() || 'N/A';
+      const serviceLabel = (data.serviceLabel || '').trim() || 'General Inquiry';
+      const scaleLabel = (data.scaleLabel || '').trim() || 'N/A';
+      const ndaStatus = data.ndaRequested ? 'Yes (M-NDA Requested)' : 'No';
+      const normalizedBrief = ((data.projectBrief || '').trim() || 'N/A').replace(/\r?\n/g, '\r\n');
+
+      const subjectSender = organization !== 'N/A' ? `${fullName} (${organization})` : fullName;
+      const subject = `[VFFC Mandate Inquiry - ${refId}] ${serviceLabel} — ${subjectSender}`;
+
+      const bodyLines = [
+        `Reference ID: ${refId}`,
+        `Full Name: ${fullName}`,
+        `Corporate Email: ${workEmail}`,
+        `Phone / WhatsApp: ${phoneNumber}`,
+        `Organization / Entity: ${organization}`,
+        `Advisory Practice: ${serviceLabel}`,
+        `Estimated Project Scale: ${scaleLabel}`,
+        `Mutual NDA (M-NDA) Requested: ${ndaStatus}`,
+        '',
+        'Mandate Brief & Scope Objectives:',
+        normalizedBrief
+      ];
+      const body = bodyLines.join('\r\n');
+
+      return `mailto:quangld@vffc.vn?cc=${encodeURIComponent('trangbtt@vffc.vn')}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    }
+
     // INITIALIZATION & EVENT LISTENERS
     document.addEventListener('DOMContentLoaded', () => {
       // Initialize in English
@@ -551,7 +583,7 @@
         });
       }
 
-      // Contact Form Submission (with in-page Toast)
+      // Contact Form Submission (with mailto: + in-page Toast)
       const contactForm = document.getElementById('contactForm');
       const toastNotification = document.getElementById('toastNotification');
       const toastRefId = document.getElementById('toastRefId');
@@ -564,13 +596,36 @@
           submitBtn.innerHTML = i18n[currentLanguage].submit_sending;
           submitBtn.disabled = true;
 
+          const getSelectLabel = (id) => {
+            const el = document.getElementById(id);
+            if (!el || !el.value) return '';
+            const opt = el.options[el.selectedIndex];
+            return opt ? opt.text : el.value;
+          };
+
+          const formData = {
+            fullName: (document.getElementById('fullName') || {}).value || '',
+            workEmail: (document.getElementById('workEmail') || {}).value || '',
+            phoneNumber: (document.getElementById('phoneNumber') || {}).value || '',
+            organization: (document.getElementById('organization') || {}).value || '',
+            serviceLabel: getSelectLabel('serviceType'),
+            scaleLabel: getSelectLabel('projectScale'),
+            projectBrief: (document.getElementById('projectBrief') || {}).value || '',
+            ndaRequested: Boolean((document.getElementById('ndaCheck') || {}).checked)
+          };
+
+          const randNum = Math.floor(1000 + Math.random() * 9000);
+          const refId = `VFFC-2026-${randNum}`;
+          const mailtoUrl = buildContactMailtoUrl(formData, refId);
+
+          window.location.href = mailtoUrl;
+
           setTimeout(() => {
             submitBtn.innerHTML = origText;
             submitBtn.disabled = false;
             contactForm.reset();
 
-            const randNum = Math.floor(1000 + Math.random() * 9000);
-            if (toastRefId) toastRefId.textContent = `VFFC-2026-${randNum}`;
+            if (toastRefId) toastRefId.textContent = refId;
             if (toastNotification) {
               toastNotification.classList.remove('hidden');
               setTimeout(() => {
